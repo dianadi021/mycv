@@ -1,0 +1,194 @@
+@import url('https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.css');
+@import url('https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css');
+@import url('https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css');
+
+* {
+    font: 12px "DM Sans", arial, Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+@page {
+    size: A4;
+    margin: 0;
+}
+
+@media print {
+    h4 {
+        font-size: 12px;
+    }
+
+    h3 {
+        font-size: 14px;
+    }
+
+    h2 {
+        font-size: 16px;
+    }
+
+    h1 {
+        font-size: 18px;
+    }
+
+    .container-print #content-biodata {
+        -webkit-print-color-adjust: exact;
+    }
+}
+
+body {
+    background-color: hsl(60, 10%, 30%);
+    size: A4;
+}
+
+h1,
+h3 {
+    text-transform: uppercase;
+    font-family: monospace;
+    width: fit-content;
+}
+
+h2,
+#date-of-birth {
+    text-transform: capitalize;
+    font-family: monospace;
+    width: 100%;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+a,
+li {
+    list-style-type: none;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+#print {
+    margin: 20mm;
+}
+
+.container-print {
+    size: A4;
+    background-color: whitesmoke;
+    display: flex;
+    border-radius: 1rem;
+    border: whitesmoke 3px solid;
+}
+
+#container-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 0.5rem 0 0.5rem 0;
+}
+
+.container-print #content-biodata {
+    width: 50%;
+    background-color: hsl(180, 100%, 35%);
+    color: white;
+    border-radius: 1rem 0 0 1rem;
+    text-align: center;
+    padding: 1.5rem;
+}
+
+#photo-profile {
+    background-color: whitesmoke;
+    height: 190px;
+    width: 190px;
+    border-radius: 10rem;
+    border: whitesmoke solid 3px;
+}
+
+#photo-profile img {
+    object-fit: cover;
+    width: 180px;
+    height: 180px;
+    border-radius: 10rem;
+    position: relative;
+    top: 1px;
+}
+
+.lists-contact a {
+    font-family: monospace;
+    width: 100%;
+    display: flex;
+    text-align: left;
+    color: whitesmoke;
+    justify-content: center;
+}
+
+#media-sosial #container-content #container-socmed li a {
+    text-align: left;
+    color: whitesmoke;
+    justify-content: center;
+    display: flex;
+}
+
+#media-sosial #container-content #container-socmed li a i {
+    font-size: 1.5rem;
+}
+
+#skills #container-content ul {
+    margin: 0 1rem 0 1rem;
+}
+
+#skills #container-content ul li {
+    width: fit-content;
+}
+
+#horizontal-line-decoration-white {
+    width: 15%;
+    height: 3px;
+    background-color: whitesmoke;
+    border: whitesmoke solid 2px;
+    border-radius: 1rem;
+    align-self: center;
+    margin: 1rem;
+}
+
+#horizontal-line-decoration-blue {
+    width: 15%;
+    height: 3px;
+    background-color: hsl(180, 100%, 35%);
+    border: hsl(180, 100%, 35%) solid 2px;
+    border-radius: 1rem;
+    align-self: center;
+    margin: 1rem;
+}
+
+.container-print #content-experiences {
+    width: 90%;
+    text-align: justify;
+    padding: 1.5rem 5mm 1.5rem 5mm;
+}
+
+.container-print #content-experiences #container-content p {
+    padding: 1rem;
+    line-height: 2rem;
+}
+
+.content-timeskip {
+    border-left: hsl(180, 100%, 35%) solid 3px;
+    border-bottom: hsl(180, 100%, 35%) solid 3px;
+}
+
+.content-timeskip #container-content {
+    width: 100%;
+}
+
+#scroll-top {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+}
