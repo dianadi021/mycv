@@ -297,3 +297,55 @@ a:hover {
         font-size: 12px;
     }
 }
+
+@media only screen and (max-width: 1024px) {
+    #print {
+        margin: 0;
+    }
+
+    .container-print {
+        flex-wrap: wrap;
+    }
+
+    .container-print #content-biodata {
+        width: 100% !important;
+    }
+
+    .container-print #content-experiences {
+        width: 100% !important;
+    }
+
+    #container-content h5 {
+        font-size: 10px;
+    }
+
+    #container-content h3 {
+        font-size: 12px;
+    }
+}
+
+@media only screen and (max-width: 1280px) {
+    #print {
+        margin: 0;
+    }
+
+    .container-print {
+        flex-wrap: wrap;
+    }
+
+    .container-print #content-biodata {
+        width: 100% !important;
+    }
+
+    .container-print #content-experiences {
+        width: 100% !important;
+    }
+
+    #container-content h5 {
+        font-size: 10px;
+    }
+
+    #container-content h3 {
+        font-size: 12px;
+    }
+}
