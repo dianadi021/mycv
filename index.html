@@ -1,0 +1,435 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8" />
+		<link rel="icon" type="image/svg+xml" href="#" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
+
+		<title>Curriculum Vitae | Dian Adi Nugroho</title>
+
+		<!-- TOKEN SEARCH ENGINE -->
+		<!--<meta content='#tokenyandex' name='yandex-verification'/>
+        <meta content='#tokenbing' name='msvalidate.01'/>
+        <meta content='#tokengoogle' name='google-site-verification'/> -->
+
+		<!-- LANGUAGE DIRECTORY -->
+		<link rel="alternate" hreflang="en" href="/" />
+		<link rel="alternate" hreflang="id" href="/" />
+
+		<!-- <meta itemprop="name" content="Bootstrap Gallery - free examples, templates &amp; tutorial"/>
+        <meta itemprop="description" content="Responsive galleries created with Bootstrap 5. Image gallery, video gallery, photo gallery, full-page, eCommerce, lightbox, slider, thumbnails, &amp; more."/>
+        <meta itemprop="image" content="https://mdbcdn.b-cdn.net/docs/standard/extended/gallery/src/assets/featured.jpg"/> -->
+
+		<!-- <meta property="og:title" content="Judul Konten Anda">
+        <meta property="og:description" content="Deskripsi Konten Anda">
+        <meta property="og:image" content="URL_GAMBAR_KONTEN">
+        <meta property="og:url" content="URL_HALAMAN_KONTEN">
+        <meta property="og:type" content="website">
+        <meta property="og:site_name" content="Dian Nugroho | Official" />
+        <meta property="og:locale" content="id_ID" />
+    
+        <meta name="twitter:card" content="summary">
+        <meta name="twitter:title" content="Judul Konten Anda">
+        <meta name="twitter:description" content="Deskripsi Konten Anda">
+        <meta name="twitter:image" content="URL_GAMBAR_KONTEN"> -->
+
+		<meta name="description" content="Personal Website (Website Pribadi) milik Dian Adi Nugroho yang dibuat menggunakan VueJS3 beserta tailwind. Website ini dibuat dengan tujuan untuk showcase skill dalam membangun website Front End Web Development." />
+		<meta name="keywords" content="dianadi021, dianskuad, dian skuad, dian nugroho, dian adi nugroho" />
+		<!-- <meta name="image" content="#" /> -->
+		<meta name="author" content="Dian Nugroho" />
+		<meta name="language" content="Indonesia" />
+		<meta name="language" content="English" />
+		<meta name="geo.placename" content="Indonesia" />
+		<meta name="geo.country" content="id" />
+		<meta name="webcrawlers" content="all" />
+		<meta name="rating" content="general" />
+		<meta name="spiders" content="all" />
+
+		<link rel="stylesheet" media="all" href="./public/assets/scripts/css/app.css" />
+		<script src="./public/assets/vendor/tailwindcss/tailwindcss-3.4.5.js"></script>
+
+		<script src="./public/assets/vendor/jquery/jquery.js"></script>
+		<script src="./public/assets/vendor/jquery/jquery-ui.js"></script>
+		<script src="./public/assets/scripts/js/controller.js"></script>
+		<script src="./public/assets/vendor/jquery/jquery.datetimepicker.full.min.js"></script>
+
+		<script src="./public/assets/vendor/moment/moment.min.js"></script>
+		<script src="./public/assets/vendor/moment/id.min.js"></script>
+
+		<script src="./public/assets/vendor/noty/noty.min.js"></script>
+		<script src="./public/assets/vendor/tostr/toastr.min.js"></script>
+		<script src="./public/assets/vendor/font-awesome/all.min.js"></script>
+		<script src="./public/assets/vendor/sweetalert/sweetalert2@11.js"></script>
+		<script src="./public/assets/vendor/alpinejs/alpinejs@3.14.3.min.js" defer></script>
+		<script src="./public/assets/vendor/datatables/datatables.js" defer></script>
+	</head>
+
+	<body class="w-full">
+		<div id="content_container">
+			<style>
+				#cv_container {
+					background-color: var(--theme-dark-blue);
+				}
+
+				#content_left_side {
+					color: var(--light);
+					background-color: var(--theme-blue);
+				}
+
+				#content_right_side {
+					background-color: var(--light);
+				}
+
+				.white-border-4 {
+					border: 1px solid var(--light);
+					background-color: var(--light);
+					height: 0.25rem;
+					width: 100%;
+					margin-left: 1rem;
+					margin-right: 1rem;
+					border-radius: 100%;
+				}
+				.blue-border-4 {
+					border: 1px solid var(--theme-blue);
+					background-color: var(--theme-blue);
+					height: 0.25rem;
+					width: 100%;
+					margin-left: 1rem;
+					margin-right: 1rem;
+					border-radius: 100%;
+				}
+				.table-no-background th,
+				.table-no-background tr,
+				.table-no-background td {
+					border: none;
+				}
+
+				.tr-table-border {
+					border-left: 2px solid var(--theme-blue) !important;
+					border-bottom: 2px solid var(--theme-blue) !important;
+				}
+
+				.underline-hover:hover {
+					text-decoration: underline;
+				}
+
+				@media print {
+					#cv_container {
+						size: A4;
+						padding: 0;
+						margin: 0;
+						height: 100%;
+					}
+
+					#content_left_side {
+						height: 100vh;
+					}
+
+					#content_right_side {
+						height: 100vh;
+						width: 60% !important;
+					}
+
+					@page {
+						size: A4;
+						/* margin: 0; */
+						margin-top: 0;
+						margin-left: 0;
+						margin-right: 0;
+					}
+
+					.no-margin {
+						margin: 0;
+					}
+
+					.no-padding {
+						padding: 0;
+					}
+				}
+			</style>
+
+			<div id="cv_container" class="w-full flex p-10">
+				<div id="content_left_side" class="flex flex-wrap w-2/3 p-10">
+					<div class="w-full flex flex-wrap page-break-after">
+						<div class="w-full flex items-center m-4 no-margin">
+							<div class="w-full white-border-4"></div>
+							<h1 class="uppercase text-2xl font-bold text-nowrap">biodata</h1>
+							<div class="w-full white-border-4"></div>
+						</div>
+						<div class="flex justify-center items-center w-full m-4">
+							<div class="aspect-square w-60 md:w-76 lg:w-92 rounded-full overflow-hidden border-4 border-white shadow-lg bg-white">
+								<img src="/mycv/public/assets/images/dianadi021.jpg" alt="Profile Picture" class="w-full h-full object-cover" />
+							</div>
+						</div>
+						<div class="w-full flex flex-wrap">
+							<div class="flex flex-wrap justify-center text-center items-center w-full">
+								<h2 class="capitalize text-xl font-bold w-full">dian adi nugroho</h2>
+								<p id="txtUmur" class="capitalize text-xl font-bold w-full"></p>
+								<p id="txtTTL" class="capitalize text-xl font-bold w-full"></p>
+								<p class="capitalize text-xl font-bold w-full"><i class="fa-solid fa-location-dot"></i> Kel. Sidoluhur, Kec. Godean, Kab. Sleman, D.I Yogyakarta 55264</p>
+							</div>
+						</div>
+					</div>
+					<div class="w-full flex flex-wrap page-break-after">
+						<div class="w-full flex items-center m-4 no-margin">
+							<div class="w-full white-border-4"></div>
+							<h1 class="uppercase text-2xl font-bold text-nowrap">kontak saya</h1>
+							<div class="w-full white-border-4"></div>
+						</div>
+						<div class="w-full flex flex-wrap">
+							<div class="flex flex-wrap justify-center text-center items-center w-full">
+								<h2 class="w-full">
+									<a href="https://dianadi021.github.io/" class="text-xl font-bold underline-hover w-full text-center"><i class="fa-solid fa-globe"></i> dianadi021.github.io</a>
+								</h2>
+								<p id="txtTTL" class="capitalize text-xl font-bold w-full"></p>
+								<p class="capitalize text-xl font-bold w-full">
+									<a href="https://wa.me/6285179997321/" class="underline-hover w-full text-center"><i class="fa-solid fa-mobile-screen-button"></i> +62851 - 7999 - 7321</a>
+								</p>
+								<p class="text-xl font-bold w-full">
+									<a href="mailto:contactmedianadi021@gmail.com" class="underline-hover w-full text-center"><i class="fa-solid fa-envelope"></i> contactmedianadi021@gmail.com</a>
+								</p>
+							</div>
+						</div>
+					</div>
+					<div class="w-full flex flex-wrap page-break-after">
+						<div class="w-full flex items-center m-4 no-margin">
+							<div class="w-full white-border-4"></div>
+							<h1 class="uppercase text-2xl font-bold text-nowrap">media sosial</h1>
+							<div class="w-full white-border-4"></div>
+						</div>
+						<div class="w-full flex flex-wrap no-margin">
+							<div class="flex flex-wrap justify-center text-center items-center w-full no-margin">
+								<h2 class="w-full no-margin">@dianadi021</h2>
+								<div class="flex flex-wrap justify-center gap-1 m-4">
+									<a href="https://www.facebook.com/dianadi021/" style="background-color: var(--theme-dark-blue); width: fit-content; padding: 0.5rem" class="flex align-center anchor-on-click sosmed w-full text-center rounded"><i style="font-size: 1.5rem" class="fab fa-facebook-square"></i></a>
+									<a href="https://www.instagram.com/dianadi021/" style="background-color: var(--theme-dark-blue); width: fit-content; padding: 0.5rem" class="flex align-center anchor-on-click sosmed w-full text-center rounded"><i style="font-size: 1.5rem" class="fab fa-instagram"></i></a>
+									<a href="https://www.twitter.com/dianadi021/" style="background-color: var(--theme-dark-blue); width: fit-content; padding: 0.5rem" class="flex align-center anchor-on-click sosmed w-full text-center rounded"><i style="font-size: 1.5rem" class="fab fa-twitter"></i></a>
+									<a href="https://www.github.com/dianadi021/" style="background-color: var(--theme-dark-blue); width: fit-content; padding: 0.5rem" class="flex align-center anchor-on-click sosmed w-full text-center rounded"><i style="font-size: 1.5rem" class="fab fa-github"></i></a>
+									<a href="https://www.linkedin.com/in/dianadi021/" style="background-color: var(--theme-dark-blue); width: fit-content; padding: 0.5rem" class="flex align-center anchor-on-click sosmed w-full text-center rounded"><i style="font-size: 1.5rem" class="fab fa-linkedin"></i></a>
+									<a href="https://www.youtube.com/@dianadi021/" style="background-color: var(--theme-dark-blue); width: fit-content; padding: 0.5rem" class="flex align-center anchor-on-click sosmed w-full text-center rounded"><i style="font-size: 1.5rem" class="fab fa-youtube"></i></a>
+									<a href="https://www.bit.ly/joinSKUAD/" style="background-color: var(--theme-dark-blue); width: fit-content; padding: 0.5rem" class="flex align-center anchor-on-click sosmed w-full text-center rounded"><i style="font-size: 1.5rem" class="fab fa-discord"></i></a>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="w-full flex flex-wrap page-break-after">
+						<div class="w-full flex items-center m-4 no-margin">
+							<div class="w-full white-border-4"></div>
+							<h1 class="uppercase text-2xl font-bold text-nowrap">keahlian</h1>
+							<div class="w-full white-border-4"></div>
+						</div>
+						<div class="w-full flex flex-wrap">
+							<div class="flex flex-wrap">
+								<div class="w-full flex items-center">
+									<div class="w-full white-border-4"></div>
+									<h2 class="uppercase text-medium font-bold text-nowrap">bahasa pemrograman</h2>
+									<div class="w-full white-border-4"></div>
+								</div>
+								<div class="flex flex-wrap justify-center text-center items-center w-full">
+									<div class="flex flex-wrap justify-center gap-1 m-4 no-margin">
+										<img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E" alt="Javascript" />
+										<img src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white" alt="PHP" />
+										<img src="https://img.shields.io/badge/Lua-2C2D72?style=for-the-badge&logo=lua&logoColor=white" alt="LUA" />
+									</div>
+								</div>
+								<div class="w-full flex items-center">
+									<div class="w-full white-border-4"></div>
+									<h2 class="uppercase text-medium font-bold text-nowrap">framework</h2>
+									<div class="w-full white-border-4"></div>
+								</div>
+								<div class="flex flex-wrap justify-center text-center items-center w-full">
+									<div class="flex flex-wrap justify-center gap-1 m-4 no-margin">
+										<img src="https://img.shields.io/badge/Express%20js-000000?style=for-the-badge&logo=express&logoColor=white" alt="ExpressJS" />
+										<img src="https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white" alt="Laravel" />
+										<img src="https://img.shields.io/badge/Vue%20js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D" alt="VueJS" />
+									</div>
+								</div>
+								<div class="w-full flex items-center">
+									<div class="w-full white-border-4"></div>
+									<h2 class="uppercase text-medium font-bold text-nowrap">database</h2>
+									<div class="w-full white-border-4"></div>
+								</div>
+								<div class="flex flex-wrap justify-center text-center items-center w-full">
+									<div class="flex flex-wrap justify-center gap-1 m-4 no-margin">
+										<img src="https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB" />
+										<img src="https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL" />
+										<img src="https://img.shields.io/badge/Oracle-F80000?style=for-the-badge&logo=Oracle&logoColor=white" alt="Oracle" />
+										<img src="https://img.shields.io/badge/PostgreSQL-316192?style=for-the-badge&logo=postgresql&logoColor=white" alt="PostgreSQL" />
+									</div>
+								</div>
+								<div class="w-full flex items-center">
+									<div class="w-full white-border-4"></div>
+									<h2 class="uppercase text-medium font-bold text-nowrap">tools</h2>
+									<div class="w-full white-border-4"></div>
+								</div>
+								<div class="flex flex-wrap justify-center text-center items-center w-full">
+									<div class="flex flex-wrap justify-center gap-1 m-4 no-margin">
+										<img src="https://img.shields.io/badge/Node%20js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="NodeJS" />
+										<img src="https://img.shields.io/badge/Docker-2CA5E0?style=for-the-badge&logo=docker&logoColor=white" alt="Docker" />
+										<img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
+										<img src="https://img.shields.io/badge/GitLab-330F63?style=for-the-badge&logo=gitlab&logoColor=white" alt="GitLab" />
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div id="content_right_side" class="w-full p-10">
+					<div class="w-full flex flex-wrap">
+						<div class="w-full flex flex-wrap">
+							<div class="w-full flex items-center m-4 no-margin">
+								<div class="w-full blue-border-4"></div>
+								<h1 class="uppercase text-2xl font-bold text-nowrap">tentang saya</h1>
+								<div class="w-full blue-border-4"></div>
+							</div>
+							<div class="w-full m-4">
+								<p class="text-justify">Dengan kerja keras dan ilmu yang sudah saya peroleh, dapat membuat saya menjadi lebih baik daripada sebelumnya. Dan saya sudah terbiasa dengan adanya perbedaan pendapat yang terjadi selama proses diskusi. Serta saya sudah terbiasa dalam bekerjasama dalam kelompok atau kerja tim.</p>
+							</div>
+						</div>
+						<div class="w-full flex flex-wrap">
+							<div class="w-full flex items-center m-4 no-margin">
+								<div class="w-full blue-border-4"></div>
+								<h1 class="uppercase text-2xl font-bold text-nowrap">pengalaman</h1>
+								<div class="w-full blue-border-4"></div>
+							</div>
+							<div class="w-full m-4">
+								<div class="tr-table-border flex flex-wrap justify-center mr-4">
+									<div class="w-full flex flex-wrap">
+										<div class="w-full flex items-center m-4 no-margin">
+											<div class="w-full blue-border-4"></div>
+											<h1 class="capitalize text-2xl font-bold text-nowrap">fullstack web developer</h1>
+											<div class="w-full blue-border-4"></div>
+										</div>
+										<div class="w-full flex justify-center items-center no-margin">
+											<div class="w-full white-border-4"></div>
+											<div class="flex gap-1 items-baseline">
+												<h3 id="tglKerja1" class="capitalize text-xs font-bold text-nowrap"></h3>
+												<h3 class="uppercase text-xs font-bold text-nowrap">| PT Medika Digital Nusantara |</h3>
+												<h3 id="durasiKerja1" class="capitalize text-xs font-bold text-nowrap"></h3>
+											</div>
+											<div class="w-full white-border-4"></div>
+										</div>
+										<div class="w-full m-4">
+											<p class="text-justify">
+												Bekerja sebagai Fullstack Web Developer atau Programmer Shifting, yang bertanggung jawab penuh terhadap perbaikan bug (bug fixing), monitoring server dan user request di setiap harinya (Jam Shifting). Bekerja sama dengan Customer Service, pekerjaan ini sangat mengutamakan kecepatan response atau coding dan analis (critical thinking) dalam menyelesaikan permasalahan yang dilaporkan oleh user. Serta membangun atau membuat
+												fitur - fitur yang diberikan oleh Product Manager/Ops dengan target mingguan ataupun <i>hustle</i> <span><i>(*dikerjakan diluar jam kerja)</i></span
+												>.
+											</p>
+											<div class="flex items-center gap-1 align-top">
+												<h4 class="capitalize font-bold text-nowrap">env: native website</h4>
+												<div class="flex flex-wrap gap-1">
+													<img style="height: 12px" class="aspect-ratio" src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E" alt="Javascript" />
+													<img style="height: 12px" class="aspect-ratio" src="https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white" alt="JQUery" />
+													<img style="height: 12px" class="aspect-ratio" src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white" alt="PHP" />
+													<img style="height: 12px" class="aspect-ratio" src="https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white" alt="Laravel" />
+													<img style="height: 12px" class="aspect-ratio" src="https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white" alt="Ubuntu" />
+													<img style="height: 12px" class="aspect-ratio" src="https://img.shields.io/badge/Oracle-F80000?style=for-the-badge&logo=Oracle&logoColor=white" alt="Oracle" />
+													<img style="height: 12px" class="aspect-ratio" src="https://img.shields.io/badge/GitLab-330F63?style=for-the-badge&logo=gitlab&logoColor=white" alt="GitLab" />
+													<img style="height: 12px" class="aspect-ratio" src="https://img.shields.io/badge/Docker-2CA5E0?style=for-the-badge&logo=docker&logoColor=white" alt="Docker" />
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="tr-table-border flex flex-wrap justify-center mr-4">
+									<div class="w-full flex flex-wrap">
+										<div class="w-full flex items-center m-4 no-margin">
+											<div class="w-full blue-border-4"></div>
+											<h1 class="capitalize text-2xl font-bold text-nowrap">backend developer</h1>
+											<div class="w-full blue-border-4"></div>
+										</div>
+										<div class="w-full flex justify-center items-center no-margin">
+											<div class="w-full white-border-4"></div>
+											<div class="flex gap-1 items-baseline">
+												<h3 id="tglKerja2" class="capitalize text-xs font-bold text-nowrap"></h3>
+												<h3 class="uppercase text-xs font-bold text-nowrap">| ZettaByte Pte Ltd |</h3>
+												<h3 id="durasiKerja2" class="capitalize text-xs font-bold text-nowrap"></h3>
+											</div>
+											<div class="w-full white-border-4"></div>
+										</div>
+										<div class="w-full m-4">
+											<p class="text-justify">
+												Mengikuti pelatihan Backend Developer yang mempelajari, membangun dan merancang struktur database yang dibutuhkan menggunakan MongoDB (Mongoose) ataupun PostgreSQL (Prisma), serta mengamankan dan membagi authentication dan authorization user (hak akses) menggunakan Json Web Token (JWT) sebagai middleware yang berhak mengakses endpoint URL REST API.
+											</p>
+											<div class="flex items-center gap-1 align-top">
+												<h4 class="capitalize font-bold text-nowrap">env: native backend</h4>
+												<div class="flex flex-wrap gap-1">
+													<img style="height: 12px" class="aspect-ratio" src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E" alt="Javascript" />
+													<img style="height: 12px" class="aspect-ratio" src="https://img.shields.io/badge/Node%20js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="NodeJS" />
+													<img style="height: 12px" class="aspect-ratio" src="https://img.shields.io/badge/Express%20js-000000?style=for-the-badge&logo=express&logoColor=white" alt="ExpressJS" />
+													<img style="height: 12px" class="aspect-ratio" src="https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=Postman&logoColor=white" alt="Postman" />
+													<img style="height: 12px" class="aspect-ratio" src="https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB" />
+													<img style="height: 12px" class="aspect-ratio" src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="tr-table-border flex flex-wrap justify-center mr-4">
+									<div class="w-full flex flex-wrap">
+										<div class="w-full flex items-center m-4 no-margin">
+											<div class="w-full blue-border-4"></div>
+											<h1 class="capitalize text-2xl font-bold text-nowrap">teknisi komputer</h1>
+											<div class="w-full blue-border-4"></div>
+										</div>
+										<div class="w-full flex justify-center items-center no-margin">
+											<div class="w-full white-border-4"></div>
+											<div class="flex gap-1 items-baseline">
+												<h3 id="tglKerja3" class="capitalize text-xs font-bold text-nowrap"></h3>
+												<h3 class="uppercase text-xs font-bold text-nowrap">| CV Ashira |</h3>
+												<h3 id="durasiKerja3" class="capitalize text-xs font-bold text-nowrap"></h3>
+											</div>
+											<div class="w-full white-border-4"></div>
+										</div>
+										<div class="w-full m-4">
+											<p class="text-justify">Mengikuti praktik kerja lapangan sebagai syarat wajib untuk lulus dari Sekolah Menengah Kejuruan (SMK), jurusan Teknik Komputer dan Jaringan (TKJ). Melakukan perbaikan, perakitan dan installasi perangkat komputer, laptop dan printer.</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="w-full flex flex-wrap">
+						<div class="w-full flex flex-wrap">
+							<div class="w-full flex items-center m-4 no-margin">
+								<div class="w-full blue-border-4"></div>
+								<h1 class="uppercase text-2xl font-bold text-nowrap">pendidikan</h1>
+								<div class="w-full blue-border-4"></div>
+							</div>
+							<div class="w-full m-4">
+								<div class="tr-table-border flex flex-wrap justify-center mr-4">
+									<div class="w-full flex flex-wrap">
+										<div class="w-full flex items-center no-margin justify-center p-2">
+											<h3 class="capitalize text-sm font-bold text-nowrap">2018 - 2023 | Universitas Amikom Yogyakarta | S1 - Informatika</h3>
+										</div>
+									</div>
+								</div>
+								<div class="tr-table-border flex flex-wrap justify-center mr-4">
+									<div class="w-full flex flex-wrap">
+										<div class="w-full flex items-center no-margin justify-center p-2">
+											<h3 class="capitalize text-sm font-bold text-nowrap">2015 - 2018 | SMK Muh. 1 Moyudan | Teknik Komputer dan Jaringan</h3>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div id="loadingAjax" class="fixed inset-0 bg-gray-500 bg-opacity-75 flex items-center justify-center z-50 cursor-wait">
+			<div class="text-center flex flex-wrap justify-center">
+				<div class="loaderAjax"></div>
+				<p class="w-full text-white">Loading, mohon tunggu...</p>
+			</div>
+		</div>
+
+		<div id="loadingContetLoader" class="spinner fixed inset-0 bg-gray-500 bg-opacity-75 flex items-center justify-center z-50 cursor-wait">
+			<div class="flex flex-wrap justify-center p-6 bg-white border border-gray-200 rounded-lg shadow-lg transform transition duration-300 hover:scale-105 hover:shadow-xl">
+				<div class="loaderContent"></div>
+				<p class="w-full text-center">Sedang menyiapkan data, Mohon ditunggu.</p>
+			</div>
+		</div>
+	</body>
+</html>
