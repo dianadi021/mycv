@@ -1,0 +1,188 @@
+@import url("../../vendor/font-awesome/all.min.css");
+@import url("../../vendor/jquery/jquery-ui.css");
+@import url("../../vendor/jquery/jquery.datetimepicker.css");
+
+:root {
+	--light-blue: #8ecae6;
+	--soft-blue: #219ebc;
+	--dark-blue: #023047;
+	--text-white: whitesmoke;
+}
+
+@media print {
+	p,
+	a {
+		font-size: 0.8rem !important;
+	}
+
+	h1.title-horizontal {
+		font-size: 1rem !important;
+	}
+
+	h2.title-horizontal,
+	h3.title-horizontal {
+		font-size: 0.75rem !important;
+	}
+
+	.content-history h3 {
+		font-size: 0.5rem !important;
+	}
+
+	#container-sosmed {
+		flex-wrap: wrap;
+	}
+
+	.sosmed {
+		height: fit-content !important;
+	}
+
+	#profile {
+		width: 50% !important;
+	}
+
+	#profile-photo {
+		width: 175px !important;
+		height: 175px !important;
+	}
+
+	#pages,
+	#profile,
+	#biodata {
+		padding: 0 !important;
+		margin: 0 !important;
+		height: 100vh !important;
+	}
+
+	.section-title {
+		padding: 0 !important;
+	}
+
+	.secton-title-print {
+		padding-bottom: 0 !important;
+	}
+
+	#skills img {
+		height: fit-content !important;
+	}
+
+	#pages {
+		size: A4 !important;
+		padding: 0 !important;
+		margin: 0 !important;
+	}
+
+	.pages-print-break {
+		page-break-before: auto;
+		page-break-after: auto;
+	}
+
+	.print-font-size {
+		font-size: 0.75rem !important;
+	}
+
+	@page {
+		size: A4 !important;
+		/* margin: 0 !important; */
+		margin-left: 0 !important;
+		margin-right: 0 !important;
+	}
+}
+
+* {
+	font-size: 1rem;
+	font-weight: 500;
+	font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande", "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+	text-decoration: none;
+}
+
+body {
+	background-color: var(--dark-blue);
+}
+
+#pages {
+	background-color: var(--text-white) !important;
+	-webkit-print-color-adjust: exact !important;
+}
+
+.border-whitesmoke-owned {
+	background-color: var(--text-white);
+}
+
+.border-soft-blue-owned {
+	background-color: var(--soft-blue);
+}
+
+.anchor-on-click:hover {
+	text-decoration: underline !important;
+}
+
+.sosmed:hover {
+	background-color: #085277f4 !important;
+}
+
+.title-horizontal {
+	font-size: 1.5rem;
+	text-wrap: nowrap;
+	text-transform: uppercase;
+}
+
+h2.title-horizontal,
+h3.title-horizontal {
+	font-size: 1rem;
+	text-transform: capitalize;
+}
+
+.border-horizontal {
+	height: 0.25rem;
+	width: 25%;
+	margin-left: 1rem;
+	margin-right: 1rem;
+	border-radius: 100%;
+}
+
+#profile {
+	background-color: var(--soft-blue);
+	color: var(--text-white);
+	width: 30%;
+	border-right: 0.15rem solid whitesmoke;
+}
+
+#picture {
+	width: 250px;
+	border-radius: 50%;
+}
+
+#picture img {
+	background-image: co;
+}
+
+#biodata {
+	background-color: var(--text-white);
+	color: var(--dark-blue);
+	width: 70%;
+	border-left: 0.15rem solid whitesmoke;
+}
+
+#skills-history img {
+	height: 15px;
+}
+
+.content-history {
+	padding: 1rem;
+	margin-left: 2.5rem;
+	margin-right: 2.5rem;
+	border-left: 1px solid var(--soft-blue);
+	border-bottom: 1px solid var(--soft-blue);
+}
+
+@media screen and (max-width: 768px) {
+	#pages {
+		margin: 0 !important;
+	}
+}
+
+@media screen and (max-width: 1280px) {
+	#pages {
+		margin: 0 !important;
+	}
+}

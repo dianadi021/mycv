@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="id">
+	<head>
+		<meta charset="UTF-8" />
+		<link rel="icon" type="image/svg+xml" href="/vite.svg" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Curriculum Vitae | Dian Adi Nugroho</title>
+
+		<!-- TOKEN SEARCH ENGINE -->
+		<!--
+    <meta content='#tokenyandex' name='yandex-verification'/>
+    <meta content='#tokenbing' name='msvalidate.01'/>
+    <meta content='#tokengoogle' name='google-site-verification'/>
+    -->
+
+		<!-- LANGUAGE DIRECTORY -->
+		<link rel="alternate" hreflang="en" href="/mycv" />
+		<link rel="alternate" hreflang="id" href="/mycv" />
+
+		<!--
+    <meta itemprop="name" content="Bootstrap Gallery - free examples, templates &amp; tutorial"/>
+    <meta itemprop="description" content="Responsive galleries created with Bootstrap 5. Image gallery, video gallery, photo gallery, full-page, eCommerce, lightbox, slider, thumbnails, &amp; more."/>
+    <meta itemprop="image" content="https://mdbcdn.b-cdn.net/docs/standard/extended/gallery/src/assets/featured.jpg"/>
+    -->
+
+		<!--
+    <meta property="og:title" content="Judul Konten Anda">
+    <meta property="og:description" content="Deskripsi Konten Anda">
+    <meta property="og:image" content="URL_GAMBAR_KONTEN">
+    <meta property="og:url" content="URL_HALAMAN_KONTEN">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="Dian Nugroho | Official" />
+    <meta property="og:locale" content="id_ID" />
+
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Judul Konten Anda">
+    <meta name="twitter:description" content="Deskripsi Konten Anda">
+    <meta name="twitter:image" content="URL_GAMBAR_KONTEN">
+    -->
+
+		<meta name="description" content="Personal Website (Website Pribadi) milik Dian Adi Nugroho yang dibuat menggunakan VueJS3 beserta tailwind. Website ini dibuat dengan tujuan untuk showcase skill dalam membangun website Front End Web Development." />
+		<meta name="keywords" content="dianadi021, dianskuad, dian skuad, dian nugroho, dian adi nugroho" />
+		<!-- <meta name="image" content="#" /> -->
+		<meta name="author" content="Dian Nugroho" />
+		<meta name="language" content="Indonesia" />
+		<meta name="language" content="English" />
+		<meta name="geo.placename" content="Indonesia" />
+		<meta name="geo.country" content="id" />
+		<meta name="webcrawlers" content="all" />
+		<meta name="rating" content="general" />
+		<meta name="spiders" content="all" />
+
+		<script src="https://cdn.tailwindcss.com"></script>
+		<link rel="stylesheet" href="public/assets/scripts/local/css/app.css" />
+
+		<script src="public/assets/scripts/vendor/jquery/jquery.js"></script>
+		<script src="public/assets/scripts/local/js/controller.js"></script>
+
+		<script src="public/assets/scripts/vendor/jquery/jquery-ui.js"></script>
+		<script src="public/assets/scripts/vendor/jquery/jquery.datetimepicker.full.min.js"></script>
+
+		<script src="public/assets/scripts/vendor/moment/moment.min.js"></script>
+		<script src="public/assets/scripts/vendor/moment/id.min.js"></script>
+
+		<script src="public/assets/scripts/vendor/others/jspdf.umd.min.js"></script>
+		<script src="public/assets/scripts/vendor/others/html2pdf.bundle.min.js"></script>
+
+		<script src="public/assets/scripts/vendor/font-awesome/all.min.js"></script>
+	</head>
+	<body id="app" class="w-full">
+		<div id="pages" class="flex m-10">
+			<div id="profile" class="flex flex-wrap justify-center p-10">
+				<div class="w-full pages-print-break">
+					<div class="secton-title-print flex w-full justify-center pt-10 pb-10 items-center">
+						<div class="border-horizontal border-whitesmoke-owned"></div>
+						<h1 class="title-horizontal">biodata</h1>
+						<div class="border-horizontal border-whitesmoke-owned"></div>
+					</div>
+					<div class="flex items-center justify-center">
+						<div id="profile-photo" class="w-64 h-64">
+							<img src="public/assets/images/dianadi021.jpg" alt="Profile Picture" class="object-cover w-full h-full rounded-full border-4 border-whitesmoke-500" />
+						</div>
+					</div>
+					<h2 class="title-horizontal text-center w-full">dian adi nugroho</h2>
+					<p id="umur" style="text-transform: capitalize" class="text-center w-full"></p>
+					<p id="tempat-tanggal-lahir" style="text-transform: capitalize" class="print-font-size text-center w-full"></p>
+					<p style="text-wrap: balance" class="text-center w-full"><i class="fa-solid fa-location-dot"></i> Kel. Sidoluhur, Kec. Godean, Kab. Sleman, D.I Yogyakarta 55264</p>
+				</div>
+				<div class="w-full pages-print-break">
+					<div class="section-title flex w-full justify-center pt-10 pb-10 items-center">
+						<div class="border-horizontal border-whitesmoke-owned"></div>
+						<h1 class="title-horizontal">kontak saya</h1>
+						<div class="border-horizontal border-whitesmoke-owned"></div>
+					</div>
+					<div class="w-full flex flex-wrap">
+						<a href="https://dianadi021.github.io/" class="anchor-on-click w-full text-center"><i class="fa-solid fa-globe"></i> dianadi021.github.io</a>
+						<a href="https://wa.me/6285179997321/" class="anchor-on-click w-full text-center"><i class="fa-solid fa-mobile-screen-button"></i> +62851 - 7999 - 7321</a>
+						<a href="mailto:contactmedianadi021@gmail.com" class="print-font-size anchor-on-click w-full text-center"><i class="fa-solid fa-envelope"></i> contactmedianadi021@gmail.com</a>
+					</div>
+				</div>
+				<div class="w-full pages-print-break">
+					<div class="section-title flex w-full justify-center pt-10 pb-10 items-center">
+						<div class="border-horizontal border-whitesmoke-owned"></div>
+						<h1 class="title-horizontal">media sosial</h1>
+						<div class="border-horizontal border-whitesmoke-owned"></div>
+					</div>
+					<p class="w-full text-center">@dianadi021</p>
+					<div class="flex w-full justify-center">
+						<div id="container-sosmed" style="gap: 5px" class="flex flex-wrap w-3/4 justify-evenly">
+							<a href="https://www.facebook.com/dianadi021/" style="background-color: var(--dark-blue); width: fit-content; padding: 0.5rem" class="flex align-center anchor-on-click sosmed w-full text-center rounded"><i style="font-size: 2rem" class="fab fa-facebook-square"></i></a>
+							<a href="https://www.instagram.com/dianadi021/" style="background-color: var(--dark-blue); width: fit-content; padding: 0.5rem" class="flex align-center anchor-on-click sosmed w-full text-center rounded"><i style="font-size: 2rem" class="fab fa-instagram"></i></a>
+							<a href="https://www.twitter.com/dianadi021/" style="background-color: var(--dark-blue); width: fit-content; padding: 0.5rem" class="flex align-center anchor-on-click sosmed w-full text-center rounded"><i style="font-size: 2rem" class="fab fa-twitter"></i></a>
+							<a href="https://www.github.com/dianadi021/" style="background-color: var(--dark-blue); width: fit-content; padding: 0.5rem" class="flex align-center anchor-on-click sosmed w-full text-center rounded"><i style="font-size: 2rem" class="fab fa-github"></i></a>
+							<a href="https://www.linkedin.com/in/dianadi021/" style="background-color: var(--dark-blue); width: fit-content; padding: 0.5rem" class="flex align-center anchor-on-click sosmed w-full text-center rounded"><i style="font-size: 2rem" class="fab fa-linkedin"></i></a>
+							<a href="https://www.youtube.com/@dianadi021/" style="background-color: var(--dark-blue); width: fit-content; padding: 0.5rem" class="flex align-center anchor-on-click sosmed w-full text-center rounded"><i style="font-size: 2rem" class="fab fa-youtube"></i></a>
+							<a href="https://www.bit.ly/joinSKUAD/" style="background-color: var(--dark-blue); width: fit-content; padding: 0.5rem" class="flex align-center anchor-on-click sosmed w-full text-center rounded"><i style="font-size: 2rem" class="fab fa-discord"></i></a>
+						</div>
+					</div>
+				</div>
+				<div class="w-full pages-print-break">
+					<div class="section-title flex w-full justify-center pt-10 pb-10 items-center">
+						<div class="border-horizontal border-whitesmoke-owned"></div>
+						<h1 class="title-horizontal">keahlian</h1>
+						<div class="border-horizontal border-whitesmoke-owned"></div>
+					</div>
+					<div class="flex w-full justify-center pl-10 pr-10">
+						<div id="skills" style="gap: 5px" class="flex flex-wrap w-full items-center justify-center">
+							<img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E" alt="Javascript" />
+							<img src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white" alt="PHP" />
+							<img src="https://img.shields.io/badge/Lua-2C2D72?style=for-the-badge&logo=lua&logoColor=white" alt="LUA" />
+							<img src="https://img.shields.io/badge/Node%20js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="NodeJS" />
+							<img src="https://img.shields.io/badge/Express%20js-000000?style=for-the-badge&logo=express&logoColor=white" alt="ExpressJS" />
+							<img src="https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white" alt="Laravel" />
+							<img src="https://img.shields.io/badge/Vue%20js-35495E?style=for-the-badge&logo=vuedotjs&logoColor=4FC08D" alt="VueJS" />
+							<img src="https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB" />
+							<img src="https://img.shields.io/badge/MySQL-005C84?style=for-the-badge&logo=mysql&logoColor=white" alt="MySQL" />
+							<img src="https://img.shields.io/badge/Oracle-F80000?style=for-the-badge&logo=Oracle&logoColor=white" alt="Oracle" />
+						</div>
+					</div>
+					<div class="secton-title-print flex w-full justify-center pt-10 pb-10 items-center"></div>
+				</div>
+			</div>
+			<div id="biodata" class="flex flex-wrap p-10">
+				<div class="w-full pages-print-break">
+					<div class="secton-title-print flex w-full justify-center pt-10 pb-10 items-center">
+						<div class="border-horizontal border-soft-blue-owned"></div>
+						<h1 class="title-horizontal">tentang saya</h1>
+						<div class="border-horizontal border-soft-blue-owned"></div>
+					</div>
+					<p class="text-pretty text-justify font-normal pl-10 pr-10">Dengan kerja keras dan ilmu yang sudah saya peroleh, dapat membuat saya menjadi lebih baik daripada sebelumnya. Dan saya sudah terbiasa dengan adanya perbedaan pendapat yang terjadi selama proses diskusi. Serta saya sudah terbiasa dalam bekerjasama dalam kelompok atau kerja tim.</p>
+				</div>
+				<div class="w-full pages-print-break">
+					<div class="section-title flex w-full justify-center pt-10 items-center">
+						<div class="border-horizontal border-soft-blue-owned"></div>
+						<h1 class="title-horizontal">pengalaman</h1>
+						<div class="border-horizontal border-soft-blue-owned"></div>
+					</div>
+					<div class="container-history w-full">
+						<div class="content-history pages-print-break justify-center">
+							<div class="w-full flex justify-center">
+								<div class="section-title flex w-2/4 justify-center items-center">
+									<div class="border-horizontal border-soft-blue-owned"></div>
+									<h2 class="title-horizontal">fullstack web developer</h2>
+									<div class="border-horizontal border-soft-blue-owned"></div>
+								</div>
+							</div>
+							<div class="w-full flex flex-wrap justify-center text-center">
+								<h3 id="inJobs" class="title-horizontal"></h3>
+								<h3 style="border-left: 1px solid var(--dark-blue); border-right: 1px solid var(--dark-blue); padding-left: 1rem; padding-right: 1rem; margin-left: 1rem; margin-right: 1rem" class="title-horizontal">PT Medika Digital Nusantara</h3>
+								<h3 id="durasiJob" class="title-horizontal"></h3>
+								<p class="text-pretty text-justify font-normal w-full">
+									Bekerja sebagai Fullstack Web Developer atau Programmer Shifting, yang bertanggung jawab penuh terhadap perbaikan bug (bug fixing), monitoring server dan user request di setiap harinya (Jam Shifting). Bekerja sama dengan Customer Service, pekerjaan ini sangat mengutamakan kecepatan response atau coding dan analis (critical thinking) dalam menyelesaikan permasalahan yang dilaporkan oleh user.
+								</p>
+								<div class="flex w-full">
+									<h3 style="text-transform: capitalize" class="title-horizontal">env: native website</h3>
+									<div class="flex w-full justify-center pl-5 pr-5">
+										<div id="skills-history" style="gap: 5px" class="flex flex-wrap w-full items-center">
+											<img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E" alt="Javascript" />
+											<img src="https://img.shields.io/badge/jQuery-0769AD?style=for-the-badge&logo=jquery&logoColor=white" alt="JQUery" />
+											<img src="https://img.shields.io/badge/PHP-777BB4?style=for-the-badge&logo=php&logoColor=white" alt="PHP" />
+											<img src="https://img.shields.io/badge/Laravel-FF2D20?style=for-the-badge&logo=laravel&logoColor=white" alt="Laravel" />
+											<img src="https://img.shields.io/badge/Ubuntu-E95420?style=for-the-badge&logo=ubuntu&logoColor=white" alt="Ubuntu" />
+											<img src="https://img.shields.io/badge/Oracle-F80000?style=for-the-badge&logo=Oracle&logoColor=white" alt="Oracle" />
+											<img src="https://img.shields.io/badge/GitLab-330F63?style=for-the-badge&logo=gitlab&logoColor=white" alt="GitLab" />
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="content-history pages-print-break justify-center">
+							<div class="w-full flex justify-center">
+								<div class="section-title flex w-2/4 justify-center items-center">
+									<div class="border-horizontal border-soft-blue-owned"></div>
+									<h2 class="title-horizontal">backend developer</h2>
+									<div class="border-horizontal border-soft-blue-owned"></div>
+								</div>
+							</div>
+							<div class="w-full flex flex-wrap justify-center text-center">
+								<h3 class="title-horizontal">18 Agu 2023 - 18 Okt 2023</h3>
+								<h3 style="border-left: 1px solid var(--dark-blue); border-right: 1px solid var(--dark-blue); padding-left: 1rem; padding-right: 1rem; margin-left: 1rem; margin-right: 1rem" class="title-horizontal">ZettaByte Pte Ltd</h3>
+								<h3 class="title-horizontal">Durasi: 3 Bln</h3>
+								<p class="text-pretty text-justify font-normal w-full">Mengikuti pelatihan Backend Developer yang mempelajari, membangun dan merancang struktur database yang dibutuhkan, serta mengamankan dan membagi authentication dan authorization user (hak akses) yang berhak mengakses database (CRUD) melalui endpoint REST API.</p>
+								<div class="flex w-full">
+									<h3 style="text-transform: capitalize" class="title-horizontal">env: native backend</h3>
+									<div class="flex w-full justify-center pl-5 pr-5">
+										<div id="skills-history" style="gap: 5px" class="flex flex-wrap w-full items-center">
+											<img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E" alt="Javascript" />
+											<img src="https://img.shields.io/badge/Node%20js-339933?style=for-the-badge&logo=nodedotjs&logoColor=white" alt="NodeJS" />
+											<img src="https://img.shields.io/badge/Express%20js-000000?style=for-the-badge&logo=express&logoColor=white" alt="ExpressJS" />
+											<img src="https://img.shields.io/badge/Postman-FF6C37?style=for-the-badge&logo=Postman&logoColor=white" alt="Postman" />
+											<img src="https://img.shields.io/badge/MongoDB-4EA94B?style=for-the-badge&logo=mongodb&logoColor=white" alt="MongoDB" />
+											<img src="https://img.shields.io/badge/GitHub-100000?style=for-the-badge&logo=github&logoColor=white" alt="GitHub" />
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<div class="content-history pages-print-break justify-center">
+							<div class="w-full flex justify-center">
+								<div class="section-title flex w-2/4 justify-center items-center">
+									<div class="border-horizontal border-soft-blue-owned"></div>
+									<h2 class="title-horizontal">teknisi komputer</h2>
+									<div class="border-horizontal border-soft-blue-owned"></div>
+								</div>
+							</div>
+							<div class="w-full flex flex-wrap justify-center text-center">
+								<h3 class="title-horizontal">Feb 2017 - Apr 2017</h3>
+								<h3 style="border-left: 1px solid var(--dark-blue); border-right: 1px solid var(--dark-blue); padding-left: 1rem; padding-right: 1rem; margin-left: 1rem; margin-right: 1rem" class="title-horizontal">CV Ashira</h3>
+								<h3 class="title-horizontal">Durasi: 3 Bln</h3>
+								<p class="text-pretty text-justify font-normal w-full">Mengikuti praktik kerja lapangan sebagai syarat wajib untuk lulus dari Sekolah Menengah Kejuruan (SMK), jurusan Teknik Komputer dan Jaringan (TKJ). Melakukan perbaikan, perakitan dan installasi perangkat komputer, laptop dan printer.</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="w-full pages-print-break">
+					<div class="section-title flex w-full justify-center pt-10 items-center">
+						<div class="border-horizontal border-soft-blue-owned"></div>
+						<h1 class="title-horizontal">pendidkan</h1>
+						<div class="border-horizontal border-soft-blue-owned"></div>
+					</div>
+					<div class="content-history pages-print-break justify-center">
+						<div class="w-full flex flex-wrap justify-center text-center">
+							<h3 class="title-horizontal">2018 - 2023</h3>
+							<h3 style="border-left: 1px solid var(--dark-blue); border-right: 1px solid var(--dark-blue); padding-left: 1rem; padding-right: 1rem; margin-left: 1rem; margin-right: 1rem" class="title-horizontal">Universitas Amikom Yogyakarta</h3>
+							<h3 class="title-horizontal">S1 - Informatika</h3>
+						</div>
+					</div>
+					<div class="content-history pages-print-break justify-center">
+						<div class="w-full flex flex-wrap justify-center text-center">
+							<h3 class="title-horizontal">2015 - 2018</h3>
+							<h3 style="border-left: 1px solid var(--dark-blue); border-right: 1px solid var(--dark-blue); padding-left: 1rem; padding-right: 1rem; margin-left: 1rem; margin-right: 1rem" class="title-horizontal">SMK Muh. 1 Moyudan</h3>
+							<h3 class="title-horizontal">Teknik Komputer dan Jaringan</h3>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</body>
+</html>
